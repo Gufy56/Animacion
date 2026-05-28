@@ -1,8 +1,6 @@
-================================================================================
   SIN GRAVEDAD — Animación en OpenGL/C++
   Vega Hurtado Braulio Eduardo
   Graficación — Instituto Tecnológico de Ciudad Juárez
-================================================================================
 
 ARCHIVOS EN EL REPOSITORIO
 ────────────────────────────────────────────────────────────────────────────────
