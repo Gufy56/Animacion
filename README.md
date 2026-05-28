@@ -1,6 +1,8 @@
+================================================================================
   SIN GRAVEDAD — Animación en OpenGL/C++
   Vega Hurtado Braulio Eduardo
   Graficación — Instituto Tecnológico de Ciudad Juárez
+================================================================================
 
 ARCHIVOS EN EL REPOSITORIO
 ────────────────────────────────────────────────────────────────────────────────
@@ -52,9 +54,9 @@ DEPENDENCIAS EXTERNAS
                                             Studio\<version>\Community\VC\Tools\
                                             MSVC\<ver>\include\GL\
 
-          freeglut\lib\x64\freeglut.lib  →  ...\MSVC\<ver>\lib\x64\
+          freeglut\lib\x86\freeglut.lib  →  ...\MSVC\<ver>\lib\x86\
 
-          freeglut\bin\x64\freeglut.dll  →  Carpeta raíz del proyecto
+          freeglut\bin\x86\freeglut.dll  →  Carpeta raíz del proyecto
 
    Windows — Alternativa con NuGet (más rápido):
      Visual Studio → Herramientas → Administrador de paquetes NuGet →
@@ -87,8 +89,8 @@ DEPENDENCIAS EXTERNAS
      b) Copia estos archivos a la carpeta raíz del proyecto:
           api\core\inc\fmod.hpp
           api\core\inc\fmod_common.h
-          api\core\lib\x64\fmod_vc.lib
-          api\core\lib\x64\fmod.dll    ← también junto al .exe al ejecutar
+          api\core\lib\x86\fmod_vc.lib
+          api\core\lib\x86\fmod.dll    ← también junto al .exe al ejecutar
 
    ── Linux ──
      a) Descarga el paquete .tar.gz para Linux y extráelo:
@@ -132,7 +134,9 @@ CONFIGURACIÓN DEL PROYECTO
          opengl32.lib
          glu32.lib
 
-    4. Cambia la plataforma a x64 (barra superior).
+    4. La plataforma DEBE ser x86 (32 bits). En la barra superior cambia
+       la plataforma a "x86". Usar x64 causará errores de enlazado.
+       Usa los archivos .lib y .dll de la carpeta x86 de cada dependencia.
     5. Compila con F7 o Ctrl+Shift+B.
 
   ── Linux — g++ ──
@@ -288,7 +292,7 @@ NOTAS
     no se verán correctamente.
 
 
-
+================================================================================
   Proyecto académico — Uso educativo
   ITCJ — 2026
-
+================================================================================
